@@ -17,6 +17,9 @@ ul{
     list-style: none;
 }
 
+h2{
+    text-align: center;
+}
 /*================= Header ==================*/
 
 
@@ -85,9 +88,11 @@ ul{
 h3{
     grid-area: 1/1/2/6;
     color: #fff;
+    text-align: center;
     text-transform: uppercase;
     align-self: flex-end;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 h3 span{
@@ -95,6 +100,8 @@ h3 span{
 }
 
 .header h2{
+    width: 100%;
+    text-align: center;
     color: #fff;
     text-transform: uppercase;
     grid-area: 2/1/3/6;
@@ -104,6 +111,8 @@ h3 span{
 .header p{
     color: #aeaeae;
     grid-area: 2/1/3/6;
+    width: 100%;
+    text-align: center;
 }
 
 .header button{
@@ -449,6 +458,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 225px 225px 225px;
+    
 }
 
 #items *{
@@ -505,7 +515,7 @@ h2{
 .reviews{
     display: grid;
     width: 100%;
-    height: 80vh;
+    height: 800px;
     background-color: #1C2A33;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -837,94 +847,6 @@ footer{
     color: #18CFAB;
     cursor: pointer;
 }
-
-/* =================ADAPTIVE(Welcome Screen)============== */
-
-@media screen and (max-width: 992px){
-    .Purchase{
-        grid-area: 2/1/3/6;
-        margin: 0;
-    }
-    .explore{
-        grid-area: 3/1/4/6;
-        margin: 30px 0;
-        align-self: flex-start;
-    }
-    #items ul{
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(4, 225px);
-    }
-    #items ul li:nth-child(1){
-        grid-area: 1/1/2/3;
-    }
-    #items ul li:nth-child(2){
-        grid-area: 1/3/2/5;
-    }
-    #items ul li:nth-child(3){
-        grid-area: 1/5/2/7;
-    }
-    #items ul li:nth-child(4){
-        grid-area: 2/5/3/7;
-    }
-    #items ul li:nth-child(5){
-        grid-area: 2/1/3/5;
-    }
-    #items ul li:nth-child(6){
-        grid-area: 3/3/4/7;
-    }
-    #items ul li:nth-child(7){
-        grid-area: 3/1/4/3;
-    }
-    #items ul li:nth-child(8){
-        grid-area: 4/1/5/3;
-    }
-    #items ul li:nth-child(9){
-        grid-area: 4/3/5/5;
-    }
-    #items ul li:nth-child(10){
-        grid-area: 4/5/5/7;
-    }
-    #services ul{
-        grid-template-rows: 50vh 50vh;
-    }
-    .subheader_img{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-gap: 50px;
-        justify-content: center;
-    }
-    .subheader_img div:nth-child(3){
-        grid-area: 2/1/3/3;
-    }
-    .reviews-content{
-        grid-area: 2/3/5/8;
-    }
-    .t6{
-        align-self: center;
-        grid-area: 5/3/6/5;
-    }
-    
-    .t7{
-        align-self: center;
-        grid-area: 5/5/6/7;
-    }
-    
-    .t8{
-        align-self: center;
-        grid-area: 5/4/6/6;
-    }
-    
-    .t9{
-        align-self: center;
-        grid-area: 5/6/6/8;
-    }
-    #reviews h2{
-        text-align: center;
-    }
-}
-
-
-
 
 
 
