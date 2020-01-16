@@ -160,6 +160,8 @@ h3 span{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    perspective: 1000px;
+    transform-style: preserve-3d;
 }
 
 .stat-itm{
